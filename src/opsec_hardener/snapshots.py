@@ -1,12 +1,12 @@
 import os
 import subprocess
-from datetime import datetime
+from datetime import datetime, UTC
 
 SNAPSHOT_DIR = os.path.expanduser("~/.opsec_snapshots")
 
 def take_snapshot():
     os.makedirs(SNAPSHOT_DIR, exist_ok=True)
-    ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    ts = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
     snap_file = os.path.join(SNAPSHOT_DIR, f"snapshot_{ts}.txt")
 
     with open(snap_file, "w") as f:
