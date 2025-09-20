@@ -15,7 +15,6 @@ def take_snapshot():
         subprocess.run(["lsmod"], stdout=f)
         subprocess.run(["ss", "-tupn"], stdout=f)
 
-    # Sign snapshot if gpg available
     try:
         subprocess.run(["gpg", "--detach-sign", snap_file], check=False)
     except FileNotFoundError:

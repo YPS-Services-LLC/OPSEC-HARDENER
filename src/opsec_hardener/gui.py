@@ -10,7 +10,6 @@ class OpsecHardener(Gtk.Window):
         notebook = Gtk.Notebook()
         self.add(notebook)
 
-        # Tabs
         notebook.append_page(Gtk.Label(label="System Snapshots"), Gtk.Label(label="Snapshots"))
         notebook.append_page(Gtk.Label(label="Network Hardening"), Gtk.Label(label="Network"))
         notebook.append_page(Gtk.Label(label="Monitoring"), Gtk.Label(label="Monitoring"))
