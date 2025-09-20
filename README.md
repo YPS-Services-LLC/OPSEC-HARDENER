@@ -51,3 +51,4 @@ MIT License.
 - [ ] Monitoring tab  
 - [ ] Cloudflare Zero Trust licensing  
 - [ ] v1.0.0 Stable Release
+
