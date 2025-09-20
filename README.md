@@ -23,3 +23,6 @@ Opsec Hardener is a modular Linux security toolkit that combines:
 git clone https://github.com/YOURNAME/opsec-hardener.git
 cd opsec-hardener
 pip install -e .
+=======
+# OPSEC-HARDENER
+>>>>>>> 686d674 (Initial commit - OPSEC-HARDENER scaffold start)
