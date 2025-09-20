@@ -1,4 +1,4 @@
-from src.opsec_hardener import snapshots
+from opsec_hardener import snapshots
 
 def test_snapshot_runs():
     snap = snapshots.take_snapshot()
