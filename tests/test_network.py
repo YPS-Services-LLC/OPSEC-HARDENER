@@ -1,12 +1,10 @@
-# tests/test_network.py
-from opsec_hardener import network
+from opsec_hardener import network, snapshots
 
 def test_fake_eth_function_exists():
-    assert hasattr(network, "fake_eth_interface")
-
-# tests/test_snapshots.py
-from opsec_hardener import snapshots
+    # The real function is create_fake_eth
+    assert hasattr(network, "create_fake_eth")
 
 def test_snapshot_runs():
     result = snapshots.take_snapshot()
-    assert "timestamp" in result
+    # Ensure it produced a snapshot file path
+    assert result.endswith(".txt")
